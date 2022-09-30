@@ -1,0 +1,31 @@
+<!-- hebergement.tpl.html -->
+ <body>
+  <div class="fond">
+    <h1 class = "text-center box col">{nom}</h1>
+    <table class = "container table table-bordered table-hover"> 
+        <!-- vue pour les propriétaires -->
+        <thead>
+            <tr>
+              <th class="col">id</th>
+              <th class="col">Nom</th>
+              <th class="col">Type</th>
+              <th class="col">Adresse</th>
+              <th class="col">Prix</th>
+              <th class="col">Etoile</th>
+              <th class="col">Disponibilité</th>
+              <th class="col">Action</th>
+            </tr>
+        </thead>
+        <!-- BEGIN ligne -->
+        <tr >
+            <!-- BEGIN attribut -->
+            <td class = "col">{ligne.attribut.valeur}</td>
+            <!-- END attribut -->
+            <td><a href="{cible}?page=hebergement&amp;supp=suppr&amp;idHebergement={ligne.idHebergement}">
+                Effacer</a></td>
+        </tr>
+        <!-- END ligne -->
+    </table>
+    <center><a  href="{cible}?page=ajout_hebergement">Nouvel hébergement</a></center>
+  </div>
+  </body>

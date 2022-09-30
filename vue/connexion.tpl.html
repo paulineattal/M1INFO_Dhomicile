@@ -1,0 +1,31 @@
+<!-- connexion.tpl.html -->
+<body>
+    <form action="{cible}?page=connexion" method="post" >
+        <div class="fond">
+            <div class ="container py-5" >
+                <div class="col-12 text-center box">
+                    <h1 class="col">{nom}</h1>
+                        
+                    <div class="form-group">
+                        <label class="col-form-label" for="inputDefault"><font class="font col"> Pseudo </font></label>
+                        <input type = "text" class = "form-control" placeholder="votre pseudo" id="inputDefault" name="identifiant" >
+                    </div>
+    
+    
+                    <div class="form-group">
+                        <label class="col-form-label" for="inputDefault"><font class="font col"> Mot de passe </font></label>
+                        <input type="password" class="form-control" placeholder="Mot de passe" id="inputDefault" name="password">
+                    </div>
+                    <input type="reset" value="Annuler" />
+                    <input type="submit" value="Valider" />
+    
+                    <div>
+                        <a href="{cible}?page=inscription" class="text-white">
+                            <u class="col">Pas encore inscrit ? S'inscrire </u>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </body>

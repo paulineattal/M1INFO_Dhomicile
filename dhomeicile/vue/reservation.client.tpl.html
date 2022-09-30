@@ -1,0 +1,25 @@
+ <!-- reservation.client.tpl.html -->
+  <div class="fond">
+      <h1 class = "text-center box col">{nom}</h1>
+      <table class = "container table table-bordered table-hover">
+          <!-- vue pour les clients -->
+          <thead>
+              <tr>
+                <th class="col">id</th>
+                <th class="col">Nom hebergement</th>
+                <th class="col">Adresse</th>
+                <th class="col">Type</th>
+                <th class="col">Action</th>
+              </tr>
+          </thead>
+          <!-- BEGIN ligne -->
+          <tr>
+                <!-- BEGIN attribut -->
+                <td class = "col">{ligne.attribut.valeur}</td>
+                <!-- END attribut -->
+                <td><a href="{cible}?page=reservation&amp;supp=suppr&amp;idReservation={ligne.idReservation}">
+                  Annuler</a></td>
+          </tr>
+          <!-- END ligne -->
+      </table>
+  </div>

@@ -1,0 +1,61 @@
+<!-- header.connexion.tpl.html -->
+<!DOCTYPE html>
+<html lang=FR>
+
+<!--  header -->
+	<head>
+		<title>{nom}</title>
+		<meta  charset="UTF-8" />
+		<meta name="Author" content="Audrey ANGELICA Pauline ATTAL" />
+		<meta name="Keywords" content="Web,HTML5" />
+		<meta name="Description" content="site dhomeicile du projet php L3" /> 
+
+	    <link href="css/styles.css" rel="stylesheet" >
+
+	    <!-- liens pour le framework css et js bootstrap -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+	    
+	</head> 
+
+	<body>
+    	<!-- Menu du site -->
+        <div>
+    		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    			<div class="container-fluid">
+    				<a class="navbar-brand" href="{cible}?page=accueil"> MENU {nom}</a>
+    				<div class="collapse navbar-collapse" id="navbarText">
+    					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    						<li class = "nav-item active">
+    		        			<a class="nav-link active" aria-current="page" href="{cible}?page=presentation">PRESENTATION</a>
+    		      			</li>
+    						<li class = "nav-item active">
+    		        			<a class="nav-link" href="{cible}?page=hebergement">HEBERGEMENT</a>
+    		      			</li>
+    				      	<li class = "nav-item active">
+    				        	<a class="nav-link" href="{cible}?page=reservation">RESERVATION</a>
+    				      	</li>
+    				      	<li class = "nav-item active">
+    				        	<a class="nav-link" href="{cible}?page=inscrit">INSCRIPTIONS</a>
+    				      	</li>
+    						<li class = "nav-item active">
+    								<a class="nav-link" href="{cible}?page=deconnexion">DECONNEXION</a>
+    						</li>
+    					</ul>
+    					<span class="navbar-text">pseudo : {pseudo}</span>
+    				</div> 
+    			</div>
+    		</nav>
+    	</div>
+
+
+
+
+
+
+
+
+
+
+
+			

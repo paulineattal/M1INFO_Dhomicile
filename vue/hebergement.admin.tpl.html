@@ -1,0 +1,27 @@
+<!-- hebergement.tpl.html -->
+ <body>
+  <div class="fond">
+    <h1 class = "text-center box col">{nom}</h1>
+    <table class = "container table table-bordered table-hover"> 
+        <!-- vue pour les propriétaires -->
+        <thead>
+            <tr>
+              <th class="col">id</th>
+              <th class="col">Nom</th>
+              <th class="col">Type</th>
+              <th class="col">Adresse</th>
+              <th class="col">Prix</th>
+              <th class="col">Etoile</th>
+              <th class="col">Disponibilité</th>
+            </tr>
+        </thead>
+        <!-- BEGIN ligne -->
+        <tr >
+            <!-- BEGIN attribut -->
+            <td class = "col">{ligne.attribut.valeur}</td>
+            <!-- END attribut -->
+        </tr>
+        <!-- END ligne -->
+    </table>
+  </div>
+  </body>

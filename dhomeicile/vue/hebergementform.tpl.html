@@ -1,0 +1,73 @@
+<!-- hebergementform.tpl.html -->
+        
+<form action="{cible}?page=ajout_hebergement" method="post" id="nouvHeb">
+    <fieldset>    
+        <div class="fond">   
+            <div class ="container py-5" >
+                <div class="col-12 text-center box">             
+                <h1 class = "text-center">{nom}</h1>
+                    <div class="form-group">
+                        <label class="col">Veuillez saisir le nom de votre logement</label>
+                        <div class="col-sm-10">
+                            <input form ="nouvHeb" type = "text" class = "form-control" placeholder = "Nom"  name="nom" >
+                        </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                        <label class="col">Veuillez selectionner le type de logement</label>
+                        <div class="col-sm-10">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text">Type</label>
+                          </div>
+                          <select form ="nouvHeb" class="custom-select" name ="type">
+                            <option value="1">Hotel</option>
+                            <option value="2">Auberge de jeunesse</option>
+                            <option value="3">Airbnb</option>
+                          </select>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col">Veuillez indiquer oÃ¹ se situe votre logement</label>
+                        <div class="col-sm-10">
+                            <input form ="nouvHeb" type = "text" class = "form-control" placeholder = "Adresse" name="adresse">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="col">Veuillez indiquer le prix pour une nuit </label>
+                        <div class="col-sm-10">
+                            <input form ="nouvHeb" type = "number" class = "form-control" placeholder = "Prix"  name="prix">
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label class="col">Combien d'Ã©toiles/5 vaut votre logement</label>
+                        <div class="col-sm-10">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text">Etoiles</label>
+                          </div>
+                          <select form ="nouvHeb" class="custom-select" name ="etoile">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="reset" value="Annuler" />
+                        <input type="submit" value="Valider" form="nouvHeb"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>

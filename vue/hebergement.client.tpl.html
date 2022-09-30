@@ -1,0 +1,28 @@
+<!-- hebergement.client.tpl.html -->
+<body>
+    <div class="fond">
+      <h1 class = "text-center box col">{nom}</h1>
+      <table class = "container table table-bordered table-hover"> 
+          <!-- vue pour les clients -->
+           <thead>
+              <tr>
+                <th class="col">id</th>
+                <th class="col">Nom</th>
+                <th class="col">Type</th>
+                <th class="col">Adresse</th>
+                <th class="col">Prix</th>
+                <th class="col">Etoile</th>
+                <th class="col">Action</th>
+              </tr>
+          </thead>
+          <!-- BEGIN ligne -->
+          <tr class="box">
+              <!-- BEGIN attribut -->
+              <td class="col">{ligne.attribut.valeur}</td>
+              <!-- END attribut -->
+              <td><a class = "col" href="{cible}?page=hebergement&amp;res=res&amp;idHebergement={ligne.idHebergement}">Réserver</a></td>
+          </tr>
+          <!-- END ligne -->
+      </table>
+    </div>
+    </body>

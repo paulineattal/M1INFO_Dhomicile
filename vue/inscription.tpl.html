@@ -1,0 +1,46 @@
+<!-- inscription.tpl.html -->
+<body>
+<div class="fond">
+    <h1 class = "text-center box col">{nom}</h1>
+    <form action="{cible}?page=inscription" method="post" >
+        <div class="container py-5" >
+            <div class="col-12 text-center box">
+                <div class="form-group">
+                    <label class="col-form-label" for="inputDefault"><font class="font col"> Pseudo </font> </label>
+                    <input type="text" class="form-control" placeholder="votre pseudo" id="inputDefault" name="pseudo" >
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label" for="inputDefault"><font class="font col"> Nom </font> </label>
+                    <input type="text" class="form-control" placeholder="votre nom" id="inputDefault" name="nom" >
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label" for="inputDefault"> <font class="font col"> Prénom </font></label>
+                    <input type="text" class="form-control" placeholder="votre prénom" id="inputDefault" name="prenom" >
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label" for="inputDefault"> <font class="font col"> Mot de pass </font> </label>
+                    <input type="password" class="form-control" placeholder="votre mot de passe" id="inputDefault" name="password">
+                </div>
+
+                <div class="form-group">
+                    <p><font class="font col">Statut</font></p>
+                        <ul> 
+                            <li>
+                                <input type="radio" id ="proprietaire" name="statut" value="Proprietaire" />
+                                <label for="proprietaire"><font class="font col">Proprietaire</font></label>
+                            </li>
+                            <li>
+                                <input type="radio" id ="client" name="statut" value="Client" />
+                                <label for="client"><font class="font col">Client</font></label>
+                            </li> 
+                        </ul>
+                </div>
+                <input type="submit" value="Valider" />
+            </div>
+        </div>
+    </form>
+</div>
+</body>

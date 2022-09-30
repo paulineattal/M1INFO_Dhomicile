@@ -1,0 +1,26 @@
+.fond{
+	background-image: url('../assets/images/fond.png');
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box{
+	background-color : rgba(192, 192, 192, 0.2);
+	padding : 20px; 
+	border-radius :50px;
+}
+
+.col{
+	color: white;
+}
+
+.font{
+	vertical-align: inherit;
+}
+
+.pres{
+	width: 18rem;
+}

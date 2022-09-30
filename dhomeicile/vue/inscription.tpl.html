@@ -1,0 +1,42 @@
+<!-- inscription.tpl.html -->
+
+
+    <div class="fond">
+        <h1 class = "text-center box col">{nom}</h1>
+        <form action="{cible}?page=inscription" method="post" >
+            <fieldset>
+                <div class="col-12 text-center box">
+                    <div class="form-group">
+                        <label class="col-form-label font col" for="pseudo">Pseudo</label>
+                        <input type="text" class="form-control" placeholder="votre pseudo" id="pseudo" name="pseudo" >
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label font col" for="nom">Nom</label>
+                        <input type="text" class="form-control" placeholder="votre nom" id="nom" name="nom" >
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label font col" for="prenom">Prénom</label>
+                        <input type="text" class="form-control" placeholder="votre prénom" id="prenom" name="prenom" >
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label font col" for="mdp">Mot de passe</label>
+                        <input type="password" class="form-control" placeholder="votre mot de passe" id="mdp" name="password">
+                    </div>
+                    <div class="form-group font col">
+                        <p>Statut</p>
+                            <ul> 
+                                <li>
+                                    <input type="radio" id ="proprietaire" name="statut" value="Proprietaire" />
+                                    <label class="col-form-label font col" for="proprietaire">Proprietaire</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id ="client" name="statut" value="Client" />
+                                    <label class="col-form-label font col" for="client">Client</label>
+                                </li> 
+                            </ul>
+                    </div>
+                    <input type="submit" value="Valider" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
